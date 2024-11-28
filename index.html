@@ -7,11 +7,21 @@
 
     <a-scene
         vr-mode-ui="enabled: false;"
-        
+
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
+        <a-assets>
+            <img id="foto" src="./67282517b29503d60f44e79873a245f2.png" alt="">
+        </a-assets>
+
         <a-marker present="hiro">
-            <a-box color="blue"></a-box>
+            <!-- <a-box color="blue"></a-box> -->
+            <a-image 
+                width="2"
+                height="2"
+                rotation="-90 0 0"
+                position="0 0 0"
+                src="#foto"></a-image>
         </a-marker>
 
 		<a-entity camera></a-entity>
