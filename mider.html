@@ -46,7 +46,7 @@
 
 <body>
     <a-scene
-        mindar-image="imageTargetSrc: ./targetsUrso.mind"
+        mindar-image="imageTargetSrc: ./targets.mind"
         color-space="sRGB"
         renderer="colorManagement: true, physicallyCorrectLights"
         vr-mode-ui="enabled: false"
@@ -66,9 +66,9 @@
         <!-- Alvo MindAR com alternância de imagens -->
         <a-entity mindar-image-target="targetIndex: 0">
             <a-plane 
-                position="0 0 0"
-                width="1.5" 
-                height="1.5" 
+                position="0 0.2 -0.5"
+                width="2" 
+                height="2.5" 
                 rotation="0 0 0"
                 alternar-texturas="src1: #imagem1; src2: #imagem2; src3: #imagem3; src4: #imagem4; intervalo: 1000">
             </a-plane>
